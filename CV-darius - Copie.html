@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Darius Ange Yéboué</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            color: #333;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ff6f61;
+        }
+        h1 {
+            color: #ff6f61;
+        }
+        .section {
+            text-align: left;
+            margin-top: 20px;
+            padding: 15px;
+            background: #ffe5d9;
+            border-left: 5px solid #ff6f61;
+            border-radius: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "✔";
+            color: #ff6f61;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e55a50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="A_professional_portrait_of_a_young_African_man_wit.png" alt="Darius Ange Yéboué">
+        <h1>Darius Ange Yéboué</h1>
+        <p>📧 dariusange222@gmail.com | 📞 +225 05 86 70 35 88</p>
+        
+        <div class="section">
+            <h2>🎯 Résumé professionnel</h2>
+            <p id="resume">Actuellement superviseur GUD, passionné par l’informatique et en formation en Big Data et Intelligence Artificielle.</p>
+            <button onclick="changerResume()">Changer Résumé</button>
+        </div>
+        
+        <div class="section">
+            <h2>📚 Formation</h2>
+            <ul>
+                <li>2025 - Aujourd’hui : Formation en IA Générative – GomyCode</li>
+                <li>2023 : Diplôme du Baccalauréat</li>
+                <li>2020 : Diplôme du BEPC</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>🛠️ Compétences</h2>
+            <ul>
+                <li>Design graphique</li>
+                <li>Développement de bots Telegram</li>
+                <li>Création de sites e-commerce</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>🚀 Projets réalisés</h2>
+            <ul>
+                <li>🤖 Karma Crystal Bot – Un bot Telegram automatisé</li>
+                <li>🎮 JEUX 21 – Un bot Telegram interactif</li>
+                <li>🛒 Atrayan – Site e-commerce</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function changerResume() {
+            let resume = document.getElementById("resume");
+            if (resume.innerHTML === "Actuellement superviseur GUD, passionné par l’informatique et en formation en Big Data et Intelligence Artificielle.") {
+                resume.innerHTML = "Développeur passionné, spécialisé en intelligence artificielle et en création d'applications innovantes.";
+            } else {
+                resume.innerHTML = "Actuellement superviseur GUD, passionné par l’informatique et en formation en Big Data et Intelligence Artificielle.";
+            }
+        }
+    </script>
+</body>
+</html>
